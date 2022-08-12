@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">java.lang.NullPointerException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.WebDriverException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">java.lang.NullPointerException</h5>
+								<h5 class="mb-4">org.openqa.selenium.WebDriverException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="4" parent-id="1">
+<tr class="s-fail" test-id="7" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Given this step can be used to specify a pre-condition <br/><span class="text-muted text-sm">Sample scenario</span></td>
-	<td>0h 0m 1s+363msc</td>
+	<td class="_600">And user clicks Student Information <br/><span class="text-muted text-sm">Admitting Student</span></td>
+	<td>0h 0m 2s+378msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,9 +137,34 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.loginPage.usernameTextBox" is null
-	at com.stepDefinitions.SampleTest.this_step_can_be_used_to_specify_a_pre_condition(SampleTest.java:20)
-	at ✽.this step can be used to specify a pre-condition(file:src/test/java/com/features/sample.feature:10)
+		<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=104.0.5112.81)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'BOOK', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c04c3eb2f1b57cf9e0721a2fc163a62d, findElement {using=xpath, value=//span[normalize-space()='Student Information']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\white\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55568/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c04c3eb2f1b57cf9e0721a2fc163a62d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.stepDefinitions.StudentAdmissionStepDef.user_clicks_Student_Information(StudentAdmissionStepDef.java:39)
+	at ✽.user clicks Student Information(file:src/test/java/com/features/StudentAdmission.feature:9)
 </textarea>
 	</td>
 </tr>
@@ -167,7 +192,7 @@
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 8, 2022 05:57:17 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 11, 2022 11:10:33 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

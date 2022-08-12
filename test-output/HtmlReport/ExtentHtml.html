@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 8, 2022 06:16:45 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 11, 2022 11:44:05 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,6 +69,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -80,7 +81,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@SampleRun</a></li>
+					<li><a href='#'>@Progression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -121,10 +122,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> skipped
                 </div>
             </div>
         </div>
@@ -135,12 +136,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>0</span> others
                 </div>
             </div>
         </div>
@@ -151,12 +152,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>3</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>6</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>0</span> others
                 </div>
             </div>
         </div>
@@ -174,11 +175,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Sample</span>
-						<span class='test-time'>Aug 8, 2022 06:16:49 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Feature Student Admission</span>
+						<span class='test-time'>Aug 11, 2022 11:44:06 PM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -187,21 +188,54 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='test-desc'>Feature Description:</div>
+<div class='scenario outline node' test-id='2' status='skip'>
 	<div class='category-list'>
-		<span class='category label'>@SampleRun</span>
+		<span class='category label'>@Progression</span>
 	</div>
-	<span class='duration right label'>0h 0m 2s+415ms</span>
+	<span class='duration right label'>0h 0m 0s+39ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Sample scenario</div>
+		<div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> Scenario Outline: Admitting Student</div>
+		<table class='runtime-table table-striped table'><tr><td>admissionNumber</td><td>firstName</td><td>rollNumber</td><td>lastName</td><td>studentClass</td><td>gender</td><td>section</td><td>dateOfBirt</td><td>category</td><td>email</td><td>admissionDate</td><td>bloodGroup</td><td>asOnDate</td><td>mobileNUmber</td><td>height</td><td>weight</td><td>fatherName</td><td>fatherPhone</td><td>motherName</td><td>motherPhone</td><td>motherOccupation</td><td>guardianName</td><td>guardianRelation</td><td>guardianEmail</td><td>guardianPhone</td><td>guardianOccupation</td><td>guardianAdress</td></tr><tr><td>548</td><td>Phil</td><td>123456</td><td>Gonzales</td><td>SDET</td><td>Male</td><td>APITesting</td><td>02/07/1997</td><td>Testing Sample</td><td>yeeyee@yahoomail.com</td><td>04/05/2004</td><td>O+</td><td>05/07/2013</td><td>7738547913</td><td>120in</td><td>125lbs</td><td>Luis</td><td>9081235876</td><td>Josefina</td><td>4568527984</td><td>House Wife</td><td>Jose</td><td>Brother</td><td>wahoo@gmail.com</td><td>9075421764</td><td>Power Washer</td><td>458 Rodensdale ln</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="SampleTest.this_step_can_be_used_to_specify_a_pre_condition()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given this step can be used to specify a pre-condition</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/diegojuarez/git/chromatechautomation/test-output/screenshots/image_08082022_181652.png"><i class='material-icons'>panorama</i></a></li>
+		<li test-id='3' class='node scenario skip' status='skip'>
+			<div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Admitting Student</div>
+			<ul class='gc steps'>
+				<li test-id='4' class='gc * skip' status='skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Hooks.start(Scenario)</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='5' class='gc given skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_is_on_chroma_tech_website()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given user is on chroma tech website</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='6' class='gc when skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.the_teacher_is_logging_in_with_username_and_password(String,String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When the teacher is logging in with username "general@teacher.com" and password "123456"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='7' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_clicks_Student_Information()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user clicks Student Information</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='8' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_clicks_on_Student_Admission()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user clicks on Student Admission</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='9' class='gc and pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And admits student with the information "548","Phil","123456","Gonzales","SDET","Male","APITesting","<dateOfBirth>","Testing Sample","yeeyee@yahoomail.com","04/05/2004","O+","05/07/2013","7738547913","120in","125lbs"</h6>
+				</li>
+				<li test-id='10' class='gc and pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And selects other for guardian</h6>
+				</li>
+				<li test-id='11' class='gc and pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters guardian information "Luis","9081235876","Josefina","4568527984","House Wife","Jose","Brother","wahoo@gmail.com","9075421764","Power Washer","458 Rodensdale ln"</h6>
+				</li>
+				<li test-id='12' class='gc * skip' status='skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Hooks.end(Scenario)</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
 			</ul>
-			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -247,16 +281,16 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@SampleRun</span>
+						<span class='category-name'>@Progression</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label others'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
+							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 2</span>
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -269,9 +303,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 8, 2022 06:16:49 PM</td>
-										<td class='linked' test-id='2'>Sample scenario</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Aug 11, 2022 11:44:06 PM</td>
+										<td class='linked' test-id='2'>Admitting Student</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Aug 11, 2022 11:44:06 PM</td>
+										<td class='linked' test-id='3'>Admitting Student</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -307,25 +346,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 8, 2022 06:16:45 PM</div>
+					<div class='panel-lead'>Aug 11, 2022 11:44:05 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 8, 2022 06:16:52 PM</div>
+			 		<div class='panel-lead'>Aug 11, 2022 11:44:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 6s+655ms</div>
+					<div class='panel-lead'>0h 0m 0s+375ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -341,12 +380,12 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@SampleRun</td>
-							<td>1</td>
+							<td>@Progression</td>
 							<td>0</td>
 							<td>0</td>
+							<td>2</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -361,38 +400,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
+				passParent: 0,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 0,
+				skipParent: 1,
+				exceptionsParent: 1,
 				childCount: 1,
-				passChild: 1,
+				passChild: 0,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 1,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 1,
-				passGrandChild: 1,
+				exceptionsChild: 1,
+				grandChildCount: 9,
+				passGrandChild: 3,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 6,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 6,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Sample":2.415
+			        "Feature Student Admission":0.039
 			};
 		</script>
 	
