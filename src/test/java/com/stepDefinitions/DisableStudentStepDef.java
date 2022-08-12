@@ -56,11 +56,10 @@ public class DisableStudentStepDef {
     }
 
     @When("selects Class {string} option from Class dropdown menu")
-    public void selects_Class_option_from_Class_dropdown_menu(String sdet) throws InterruptedException {
+    public void selects_Class_option_from_Class_dropdown_menu(String sdet) {
 
         CommonUtils.selectDropDownValue(sdet, disableStudent.ClassWebElement);
 
-        Thread.sleep(5000);
 
     }
 
