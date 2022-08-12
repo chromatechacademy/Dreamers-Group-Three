@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 8, 2022 06:16:45 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 12, 2022 05:17:16 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -80,7 +80,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@SampleRun</a></li>
+					<li><a href='#'>@Moe</a></li>
+					<li><a href='#'>@DG3-2</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -151,7 +152,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -176,8 +177,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Sample</span>
-						<span class='test-time'>Aug 8, 2022 06:16:49 PM</span>
+						<span class='test-name'>user should not be able to login with invalid credentials.</span>
+						<span class='test-time'>Aug 12, 2022 05:17:25 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -189,17 +190,32 @@
 </div>
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label'>@SampleRun</span>
+		<span class='category label'>@Moe</span>
+		<span class='category label'>@DG3-2</span>
 	</div>
-	<span class='duration right label'>0h 0m 2s+415ms</span>
+	<span class='duration right label'>0h 0m 6s+638ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Sample scenario</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: user shouldnt be able to login with invalid credential</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="SampleTest.this_step_can_be_used_to_specify_a_pre_condition()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given this step can be used to specify a pre-condition</div>
+			<div class="step-name" title="loginInvalidCredSteps.the_user_is_on_the_CTSMS_login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user is on the CTSMS login page</div>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/diegojuarez/git/chromatechautomation/test-output/screenshots/image_08082022_181652.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="/Users/safikhan/Dreamers-Group-Three/test-output/screenshots/image_12082022_171728.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='5' class='node when pass' status='pass'>
+			<div class="step-name" title="loginInvalidCredSteps.user_logs_in_with_invalid_username_and_password(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user logs in with invalid username "general5@gmail.commm" and password "09876"</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="/Users/safikhan/Dreamers-Group-Three/test-output/screenshots/image_12082022_171730.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='6' class='node then pass' status='pass'>
+			<div class="step-name" title="loginInvalidCredSteps.user_should_not_be_able_to_be_logged_in_to(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user should not be able to be logged in to "Chroma Tech Academy"</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="/Users/safikhan/Dreamers-Group-Three/test-output/screenshots/image_12082022_171732.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
@@ -247,7 +263,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@SampleRun</span>
+						<span class='category-name'>@Moe</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -269,8 +285,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 8, 2022 06:16:49 PM</td>
-										<td class='linked' test-id='2'>Sample scenario</td>
+										<td>Aug 12, 2022 05:17:25 PM</td>
+										<td class='linked' test-id='2'>user shouldnt be able to login with invalid credential</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DG3-2</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 12, 2022 05:17:25 PM</td>
+										<td class='linked' test-id='2'>user shouldnt be able to login with invalid credential</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -307,25 +356,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 8, 2022 06:16:45 PM</div>
+					<div class='panel-lead'>Aug 12, 2022 05:17:16 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 8, 2022 06:16:52 PM</div>
+			 		<div class='panel-lead'>Aug 12, 2022 05:17:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 6s+655ms</div>
+					<div class='panel-lead'>0h 0m 17s+496ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -341,7 +390,16 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@SampleRun</td>
+							<td>@Moe</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@DG3-2</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -378,8 +436,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 1,
-				passGrandChild: 1,
+				grandChildCount: 3,
+				passGrandChild: 3,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -392,7 +450,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Sample":2.415
+			        "user should not be able to login with invalid credentials.":6.638
 			};
 		</script>
 	
