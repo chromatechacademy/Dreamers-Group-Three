@@ -30,7 +30,7 @@ public class StudentAdmissionPage {
     public WebElement genderTextBox;
     
     @FindBy(xpath = "//select[@id='section_id']")
-    public WebElement sectionTextBox;
+    public WebElement sectionDropDown;
 
     @FindBy(xpath = "//input[@id='dob']")
     public WebElement dateOfBirthTextBox;
@@ -58,6 +58,8 @@ public class StudentAdmissionPage {
 
     @FindBy(xpath = "//input[@id='custom_fields[students][3]']")
     public WebElement weightTextBox;
+
+
 
     public StudentAdmissionPage() {
 

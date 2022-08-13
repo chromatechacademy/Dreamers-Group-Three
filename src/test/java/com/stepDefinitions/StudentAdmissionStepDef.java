@@ -1,5 +1,6 @@
 package com.stepDefinitions;
 
+import org.apache.commons.configuration.resolver.CatalogResolver.Catalog;
 import org.openqa.selenium.By;
 
 import com.constants.ApplicationConstants;
@@ -8,6 +9,7 @@ import com.github.dockerjava.api.model.Driver;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.pages.StudentAdmissionPage;
+import com.web.CommonUtils;
 import com.web.WebDriverUtils;
 
 import cucumber.api.java.en.Given;
@@ -49,17 +51,17 @@ public class StudentAdmissionStepDef {
             String lastName,
             String studentClass, String gender, String section, String dateOfBirth, String category, String email,
             String admissionDate, String bloodGroup, String asOnDate, String mobileNumber, String height,
-            String weight) {
+            String weight) throws InterruptedException {
 
         studentAdmissionPage.admissionNumberTextBox.sendKeys(admissionNumber);
         studentAdmissionPage.firstNameTextBox.sendKeys(firstName);
         studentAdmissionPage.rollNumberTextBox.sendKeys(rollNumber);
         studentAdmissionPage.lastNameTextBox.sendKeys(lastName);
-        studentAdmissionPage.studentClass.sendKeys(studentClass);
-        studentAdmissionPage.genderTextBox.sendKeys(gender);
+        CommonUtils.selectDropDownValue(studentClass, studentAdmissionPage.studentClass);
+        CommonUtils.selectDropDownValue(gender, studentAdmissionPage.genderTextBox);
         studentAdmissionPage.sectionTextBox.sendKeys(section);
         studentAdmissionPage.dateOfBirthTextBox.sendKeys(dateOfBirth);
-        studentAdmissionPage.categoryTextBox.sendKeys(category);
+        CommonUtils.selectDropDownValue(category, studentAdmissionPage.categoryTextBox);
         studentAdmissionPage.emailTextBox.sendKeys(email);
         studentAdmissionPage.admissionDateTextBox.sendKeys(admissionDate);
         studentAdmissionPage.bloodGroupTextBox.sendKeys(bloodGroup);
@@ -67,16 +69,18 @@ public class StudentAdmissionStepDef {
         studentAdmissionPage.mobileNumberTextBox.sendKeys(mobileNumber);
         studentAdmissionPage.heightTextBox.sendKeys(height);
         studentAdmissionPage.weightTextBox.sendKeys(weight);
+        Thread.sleep(3000);
 
     }
 
     @When("selects other for guardian")
     public void selects_other_for_guardian() {
 
+        
     }
 
     @When("enters guardian information {string},{string},{string},{string},{string},{string},{string},{string},{string},{string},{string},{string}")
-    public void enters_guardian_information(String string, String string2, String string3, String string4,
+    public void enters_guardian_information(String fatherName, String string2, String string3, String string4,
             String string5, String string6, String string7, String string8, String string9, String string10,
             String string11, String string12) {
 
