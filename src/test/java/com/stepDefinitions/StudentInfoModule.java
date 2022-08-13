@@ -1,13 +1,14 @@
 package com.stepDefinitions;
 
+import java.io.IOException;
 
-
-
-import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 import com.constants.ApplicationConstants;
 import com.pages.HomePage;
 import com.pages.LoginPage;
+import com.utils.CucumberLogUtils;
+import com.web.CommonUtils;
 import com.web.WebDriverUtils;
 
 import cucumber.api.java.en.Given;
@@ -26,18 +27,20 @@ public class StudentInfoModule {
         loginPage.signInButton.click();
 
     }
-    @When("A user clicks on Student Information Module")
-    public void a_user_clicks_on_Student_Information_Module() {
-    
 
-        WebDriverUtils.driver.findElement(By.xpath("//span[normalize-space()='Student Information']")).click();
+    @When("A user clicks on {string} Module")
+    public void a_user_clicks_on_Module(String string) throws IOException {
+
+        CommonUtils.waitForVisibility(homePage.studentInfoModule);
+        homePage.studentInfoModule.click();
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
     }
 
-@Then("A user will see modules listed in Student Information Module")
-public void a_user_will_see_modules_listed_in_Student_Information_Module() {
+        @Then("{string} Module displays the following modules")
+        public void module_displays_the_following_modules(String string, String docString) {
 
-
+            
+        }
 
 }
-}
-

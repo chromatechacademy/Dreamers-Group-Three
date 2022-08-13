@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">java.lang.NullPointerException</a>
+							<a href="#" class="item-title _500">java.lang.AssertionError</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">java.lang.NullPointerException</h5>
+								<h5 class="mb-4">java.lang.AssertionError</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="6" parent-id="1">
+<tr class="s-fail" test-id="9" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then A user will see modules listed in Student Information Module <br/><span class="text-muted text-sm">Student information Module scenario</span></td>
-	<td>0h 0m 0s+1msc</td>
+	<td class="_600">Then Class "SDET" displays with the following class sections <br/><span class="text-muted text-sm">CTSMS - Class and Sections Verification</span></td>
+	<td>0h 0m 0s+56msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,9 +137,22 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">java.lang.NullPointerException
-	at com.stepDefinitions.StudentInfoModule.a_user_will_see_modules_listed_in_Student_Information_Module(StudentInfoModule.java:42)
-	at ✽.A user will see modules listed in Student Information Module(file:src/test/java/com/features/studentInfoModule.feature:9)
+		<textarea disabled class="code-block">java.lang.AssertionError: expected:<Testing Fundamentals
+SDLC Methodologies
+Selenium Test Automation
+Cucumber Fundamentals
+API Testing
+Git/GitHub
+Java 11 for Cool People
+Mobile Test Automation
+Accessibility Testing
+Database Testing> but was:<[[ChromeDriver: chrome on MAC (516fe3e11f8246278d88347f7a086c96)] -> xpath: //tbody/tr[2]/td[2]]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepDefinitions.ClassAndSectionsSteps.class_displays_with_the_following_class_sections(ClassAndSectionsSteps.java:92)
+	at ✽.Class "SDET" displays with the following class sections(file:src/test/java/com/features/ClassesAndSections.feature:17)
 </textarea>
 	</td>
 </tr>
@@ -167,7 +180,7 @@
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 11, 2022 12:47:11 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 11, 2022 04:42:32 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

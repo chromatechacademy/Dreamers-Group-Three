@@ -51,14 +51,6 @@
 							</a>
 						</li>
 						<li>
-							<a href="exception.html">
-							<span class="nav-icon">
-							<i class="fa fa-warning"></i>
-							</span>
-							<span class="nav-text">Exceptions</span>
-							</a>
-						</li>
-						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -103,7 +95,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
+										
 										
 										
 										
@@ -121,6 +113,7 @@
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 						    	        <a class="dropdown-item" href="#"><span class="cf">@pricila</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@StudentInfoModule</span></a>
 						    	        <a class="dropdown-item" href="#"><span class="cf">@FirstRun</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
@@ -138,23 +131,24 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="fail">
-											<div class="st fail test l0" 
+											<div class="tsc" status="pass">
+											<div class="st pass test l0" 
 												tags=""
 												devices="">
-												<span class="tt">08.11.2022 12:47:15</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">08.12.2022 18:36:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">[Student Info Module] started</span>
 												
 											</div>
-											<div class="st fail test l1" 
-												tags="@pricila @FirstRun"
+											<div class="st pass test l1" 
+												tags="@pricila @StudentInfoModule @FirstRun"
 												devices="">
-												<span class="tt">08.11.2022 12:47:15</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">08.12.2022 18:36:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">|---[Student information Module scenario] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @pricila</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @StudentInfoModule</span>
 													<span class="category badge"><i class="fa fa-tag"></i> @FirstRun</span>
 												</span>
 												<span class="author-list">
@@ -166,12 +160,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">08.11.2022 12:47:15</span>&nbsp;
+												<span class="tt">08.12.2022 18:36:02</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given A user is logged into the ctsms website] started</span>
 												
 												<div class="st pass">
-													<span class="tt">08.11.2022 12:47:17</span>&nbsp;
+													<span class="tt">08.12.2022 18:36:04</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given A user is logged into the ctsms website]</span>
 													
@@ -181,34 +175,31 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">08.11.2022 12:47:17</span>&nbsp;
+												<span class="tt">08.12.2022 18:36:04</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When A user clicks on Student Information Module] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When A user clicks on "Student Information" Module] started</span>
 												
-												<div class="st pass">
-													<span class="tt">08.11.2022 12:47:17</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When A user clicks on Student Information Module]</span>
-													
+												<div class="st info">
+													<span class="tt">08.12.2022 18:36:04</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When A user clicks on "Student Information" Module]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded1.png' src='test-output/embedded1.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">08.11.2022 12:47:17</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A user will see modules listed in Student Information Module] started</span>
+												<span class="tt">08.12.2022 18:36:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Student Information" Module displays the following modules] started</span>
 												
-												<div class="st fail">
-													<span class="tt">08.11.2022 12:47:17</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A user will see modules listed in Student Information Module]</span>
+												<div class="st pass">
+													<span class="tt">08.12.2022 18:36:05</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Student Information" Module displays the following modules]</span>
 													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException
-	at com.stepDefinitions.StudentInfoModule.a_user_will_see_modules_listed_in_Student_Information_Module(StudentInfoModule.java:42)
-	at ✽.A user will see modules listed in Student Information Module(file:src/test/java/com/features/studentInfoModule.feature:9)
-</textarea></span>
+													<span class="td"></span>
 												</div>
 											</div>
 											</div>
