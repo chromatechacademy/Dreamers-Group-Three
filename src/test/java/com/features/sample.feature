@@ -20,7 +20,7 @@ Feature: Sample
 
     #PERFORM DATA DRIVEN TESTING USING A SCENARIO OUTLINE
     #EXECUTE THE SAME TEST CASE WITH DIFFERENT SETS OF DATA
-    @Progression
+    @Smoke
     Scenario Outline: Sample of scenario outline - login with different usernames and passwords
         Given user is on the home page
         When users logs in with username "<username>" and password "<password>"

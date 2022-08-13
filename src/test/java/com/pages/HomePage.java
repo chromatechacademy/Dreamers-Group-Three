@@ -16,9 +16,15 @@ public class HomePage {
     @FindBy(xpath = "//a[normalize-space()='Class']")
     public WebElement classModuleLink;
 
-    // Student Information Module
+    // Student Information Module link
     @FindBy(xpath = "//span[normalize-space()='Student Information']")
     public WebElement studentInfoModule;
+
+    // student list
+    @FindBy(xpath = "//li[1]/ul[1]")
+    public WebElement studentInfoList; 
+
+
 
     // CONSTRUCTOR USING PAGE FACTORY TO INITIALIZE ELEMENTS
     public HomePage() {

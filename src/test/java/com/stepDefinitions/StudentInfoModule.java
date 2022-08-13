@@ -2,7 +2,8 @@ package com.stepDefinitions;
 
 import java.io.IOException;
 
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import com.constants.ApplicationConstants;
 import com.pages.HomePage;
@@ -20,27 +21,30 @@ public class StudentInfoModule {
     HomePage homePage = new HomePage();
 
     @Given("A user is logged into the ctsms website")
-    public void a_user_is_logged_into_the_ctsms_website() {
+    public void a_user_is_logged_into_the_ctsms_website() throws IOException {
         WebDriverUtils.driver.get(ApplicationConstants.APPLICATION_URL);
         loginPage.usernameTextBox.sendKeys(ApplicationConstants.USERNAME);
         loginPage.passwordTextBox.sendKeys(ApplicationConstants.PASSWORD);
+        CucumberLogUtils.logExtentScreenshot();
+        CucumberLogUtils.logScreenShot();
         loginPage.signInButton.click();
-
     }
 
-    @When("A user clicks on {string} Module")
-    public void a_user_clicks_on_Module(String string) throws IOException {
+    @When("A user clicks on Student Information")
+    public void a_user_clicks_on_Student_Information() throws IOException {
 
         CommonUtils.waitForVisibility(homePage.studentInfoModule);
-        homePage.studentInfoModule.click();
-        CucumberLogUtils.logScreenShot();
+        WebDriverUtils.driver.findElement(By.xpath("//span[normalize-space()='Student Information']")).click();
         CucumberLogUtils.logExtentScreenshot();
+        CucumberLogUtils.logScreenShot();
     }
 
-        @Then("{string} Module displays the following modules")
-        public void module_displays_the_following_modules(String string, String docString) {
+    @Then("{string} Module displays the following modules:")
+    public void module_displays_the_following_modules(String studentInformation, String studentInfoList) {
 
-            
-        }
+        Assert.assertTrue(homePage.studentInfoModule.getText().contentEquals(studentInformation));
+
+        Assert.assertEquals(studentInfoList, homePage.studentInfoList.getText());
+    }
 
 }
