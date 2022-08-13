@@ -48,12 +48,26 @@ public class StudentAdmissionStepDef {
     public void admits_student_with_the_information(String admissionNumber, String firstName, String rollNumber,
             String lastName,
             String studentClass, String gender, String section, String dateOfBirth, String category, String email,
-            String admissionDate, String bloodGroup, String asOnDate, String mobileNUmber, String height,
+            String admissionDate, String bloodGroup, String asOnDate, String mobileNumber, String height,
             String weight) {
 
-                studentAdmissionPage.admissionNumberTextBox.sendKeys(admissionNumber);
-                studentAdmissionPage.firstNameTextBox.sendKeys(firstName);
-                studentAdmissionPage.rollNumberTextBox.sendKeys(rollNumber);
+        studentAdmissionPage.admissionNumberTextBox.sendKeys(admissionNumber);
+        studentAdmissionPage.firstNameTextBox.sendKeys(firstName);
+        studentAdmissionPage.rollNumberTextBox.sendKeys(rollNumber);
+        studentAdmissionPage.lastNameTextBox.sendKeys(lastName);
+        studentAdmissionPage.studentClass.sendKeys(studentClass);
+        studentAdmissionPage.genderTextBox.sendKeys(gender);
+        studentAdmissionPage.sectionTextBox.sendKeys(section);
+        studentAdmissionPage.dateOfBirthTextBox.sendKeys(dateOfBirth);
+        studentAdmissionPage.categoryTextBox.sendKeys(category);
+        studentAdmissionPage.emailTextBox.sendKeys(email);
+        studentAdmissionPage.admissionDateTextBox.sendKeys(admissionDate);
+        studentAdmissionPage.bloodGroupTextBox.sendKeys(bloodGroup);
+        studentAdmissionPage.asOnDateTextBox.sendKeys(asOnDate);
+        studentAdmissionPage.mobileNumberTextBox.sendKeys(mobileNumber);
+        studentAdmissionPage.heightTextBox.sendKeys(height);
+        studentAdmissionPage.weightTextBox.sendKeys(weight);
+
     }
 
     @When("selects other for guardian")
@@ -61,9 +75,10 @@ public class StudentAdmissionStepDef {
 
     }
 
-    @When("enters guardian information {string},{string},{string},{string},{string},{string},{string},{string},{string},{string},{string}")
-public void enters_guardian_information(String string, String string2, String string3, String string4, String string5, String string6, String string7, String string8, String string9, String string10, String string11) {
-    
+    @When("enters guardian information {string},{string},{string},{string},{string},{string},{string},{string},{string},{string},{string},{string}")
+    public void enters_guardian_information(String string, String string2, String string3, String string4,
+            String string5, String string6, String string7, String string8, String string9, String string10,
+            String string11, String string12) {
 
-
+    }
 }

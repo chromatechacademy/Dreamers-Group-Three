@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.WebDriverException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.InvalidSelectorException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.WebDriverException</h5>
+								<h5 class="mb-4">org.openqa.selenium.InvalidSelectorException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="7" parent-id="1">
+<tr class="s-fail" test-id="9" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">And user clicks Student Information <br/><span class="text-muted text-sm">Admitting Student</span></td>
-	<td>0h 0m 2s+378msc</td>
+	<td class="_600">And admits student with the information "548","Phil","123456","Gonzales","SDET","Male","APITesting","<dateOfBirth>","Testing Sample","yeeyee@yahoomail.com","04/05/2004","O+","05/07/2013","7738547913","120in","125lbs" <br/><span class="text-muted text-sm">Admitting Student</span></td>
+	<td>0h 0m 0s+606msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,14 +137,16 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+		<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@id='custom_fields because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@id='custom_fields' is not a valid XPath expression.
   (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'BOOK', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c04c3eb2f1b57cf9e0721a2fc163a62d, findElement {using=xpath, value=//span[normalize-space()='Student Information']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\white\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55568/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c04c3eb2f1b57cf9e0721a2fc163a62d
+Command: [684e715b9d38f5758866129fa035c5a7, findElement {using=xpath, value=//input[@id='custom_fields}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\white\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62033/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 684e715b9d38f5758866129fa035c5a7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -162,9 +164,9 @@ Session ID: c04c3eb2f1b57cf9e0721a2fc163a62d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at com.stepDefinitions.StudentAdmissionStepDef.user_clicks_Student_Information(StudentAdmissionStepDef.java:39)
-	at ✽.user clicks Student Information(file:src/test/java/com/features/StudentAdmission.feature:9)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.stepDefinitions.StudentAdmissionStepDef.admits_student_with_the_information(StudentAdmissionStepDef.java:67)
+	at ✽.admits student with the information "548","Phil","123456","Gonzales","SDET","Male","APITesting","<dateOfBirth>","Testing Sample","yeeyee@yahoomail.com","04/05/2004","O+","05/07/2013","7738547913","120in","125lbs"(file:src/test/java/com/features/StudentAdmission.feature:11)
 </textarea>
 	</td>
 </tr>
@@ -192,7 +194,7 @@ Session ID: c04c3eb2f1b57cf9e0721a2fc163a62d
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 11, 2022 11:10:33 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 12, 2022 08:35:44 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>
