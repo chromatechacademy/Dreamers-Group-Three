@@ -36,12 +36,12 @@ public class StudentAdmissionPage {
     public WebElement dateOfBirthTextBox;
 
     @FindBy(xpath = "//select[@id='category_id']")
-    public WebElement categoryTextBox;
+    public WebElement categoryDropDown;
 
     @FindBy(xpath = "//input[@id='email']")
     public WebElement emailTextBox;
 
-    @FindBy(xpath = "//input[@id='admission_date']")
+    @FindBy(xpath = "//script[contains(text(),'function savedata(eventData) {')]")
     public WebElement admissionDateTextBox;
 
     @FindBy(xpath = "//select[@name='blood_group']")
