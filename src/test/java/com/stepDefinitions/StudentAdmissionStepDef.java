@@ -10,6 +10,7 @@ import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.pages.StudentAdmissionPage;
 import com.web.CommonUtils;
+import com.web.JavascriptUtils;
 import com.web.WebDriverUtils;
 
 import cucumber.api.java.en.Given;
@@ -61,33 +62,46 @@ public class StudentAdmissionStepDef {
         Thread.sleep(4000);
         CommonUtils.selectDropDownValue(gender, studentAdmissionPage.genderTextBox);
         CommonUtils.selectDropDownValue(section, studentAdmissionPage.sectionDropDown);
-        studentAdmissionPage.dateOfBirthTextBox.sendKeys(dateOfBirth);
+        JavascriptUtils.selectDateByJS(studentAdmissionPage.dateOfBirthTextBox, dateOfBirth);
         CommonUtils.selectDropDownValue(category, studentAdmissionPage.categoryDropDown);
         studentAdmissionPage.emailTextBox.sendKeys(email);
-        studentAdmissionPage.admissionDateTextBox.click();
-        studentAdmissionPage.admissionDateSelectTextBox.click();
+        JavascriptUtils.selectDateByJS(studentAdmissionPage.admissionDateTextBox, admissionDate);
         CommonUtils.selectDropDownValue(bloodGroup, studentAdmissionPage.bloodGroupTextBox);
-        studentAdmissionPage.asOnDateTextBox.click();
-        studentAdmissionPage.asOnDateSelectTextBox.click();
-        Thread.sleep(6000);
+        JavascriptUtils.selectDateByJS(studentAdmissionPage.asOnDateTextBox, asOnDate);
+        CommonUtils.waitForVisibility(studentAdmissionPage.mobileNumberTextBox);
         studentAdmissionPage.mobileNumberTextBox.sendKeys(mobileNumber);
-        Thread.sleep(6000);
         studentAdmissionPage.heightTextBox.sendKeys(height);
         studentAdmissionPage.weightTextBox.sendKeys(weight);
-        
 
     }
 
     @When("selects other for guardian")
-    public void selects_other_for_guardian() {
-
-        
+    public void selects_other_for_guardian()  {
+        studentAdmissionPage.guardianSelectionRadio.click();
     }
 
     @When("enters guardian information {string},{string},{string},{string},{string},{string},{string},{string},{string},{string},{string},{string}")
-    public void enters_guardian_information(String fatherName, String string2, String string3, String string4,
-            String string5, String string6, String string7, String string8, String string9, String string10,
-            String string11, String string12) {
+    public void enters_guardian_information(String fatherName, String fatherPhone, String fatherOccupation,
+            String motherName,
+            String motherPhone, String motherOccupation, String guradianName, String guardianRelation,
+            String guardianEmail, String guardianPhone,
+            String guardianOccupation, String guardianAdress) throws InterruptedException {
 
+        studentAdmissionPage.fatherNameTextBox.sendKeys(fatherName);
+        studentAdmissionPage.fatherPhoneTextBox.sendKeys(fatherPhone);
+        studentAdmissionPage.fatherOccupationTextBox.sendKeys(fatherOccupation);
+        studentAdmissionPage.motherNameTextBox.sendKeys(motherName);
+        studentAdmissionPage.motherPhoneTextBox.sendKeys(motherPhone);
+        studentAdmissionPage.motherOccupationTextBox.sendKeys(motherOccupation);
+        studentAdmissionPage.guardianNameTextBox.sendKeys(guradianName);
+        studentAdmissionPage.guardianRelationTextBox.sendKeys(guardianRelation);
+        studentAdmissionPage.guardianEmailTextBox.sendKeys(guardianEmail);
+        studentAdmissionPage.guardianPhoneTextBox.sendKeys(guardianPhone);
+        studentAdmissionPage.guardianOccupationTextBox.sendKeys(guardianOccupation);
+        studentAdmissionPage.guardianAddressTextBox.sendKeys(guardianAdress);
+        studentAdmissionPage.saveButton.click();
+        Thread.sleep(5000);
+
+        // JavascriptUtils.scrollIntoView(element);
     }
 }

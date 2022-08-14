@@ -44,7 +44,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -54,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 13, 2022 08:43:09 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 14, 2022 03:30:35 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -70,8 +69,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -124,10 +121,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -138,10 +135,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -154,12 +151,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='57.143%'><span class='strong'>4</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>2</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -177,11 +174,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Feature Student Admission</span>
-						<span class='test-time'>Aug 13, 2022 08:43:11 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Aug 14, 2022 03:30:37 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -191,18 +188,18 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 <div class='test-desc'>Feature Description:</div>
-<div class='scenario outline node' test-id='2' status='fail'>
+<div class='scenario outline node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@Progression</span>
 	</div>
-	<span class='duration right label'>0h 0m 14s+395ms</span>
+	<span class='duration right label'>0h 0m 14s+804ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Admitting Student</div>
-		<table class='runtime-table table-striped table'><tr><td>admissionNumber</td><td>firstName</td><td>rollNumber</td><td>lastName</td><td>studentClass</td><td>gender</td><td>section</td><td>dateOfBirth</td><td>category</td><td>email</td><td>admissionDate</td><td>bloodGroup</td><td>asOnDate</td><td>mobileNumber</td><td>height</td><td>weight</td><td>fatherName</td><td>fatherPhone</td><td>fatherOccupation</td><td>motherName</td><td>motherPhone</td><td>motherOccupation</td><td>guardianName</td><td>guardianRelation</td><td>guardianEmail</td><td>guardianPhone</td><td>guardianOccupation</td><td>guardianAdress</td></tr><tr><td>548</td><td>Phil</td><td>123456</td><td>Gonzales</td><td>SDET</td><td>Male</td><td>API Testing</td><td>02/07/1997</td><td>Testing sample</td><td>yeeyee@yahoomail.com</td><td>08/02/2022</td><td>O+</td><td>08/09/2022</td><td>7738547913</td><td>120in</td><td>125lbs</td><td>Luis</td><td>9081235876</td><td>Window Cleaner</td><td>Josefina</td><td>4568527984</td><td>House Wife</td><td>Jose</td><td>Brother</td><td>wahoo@gmail.com</td><td>9075421764</td><td>Power Washer</td><td>458 Rodensdale ln</td></tr></table>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Admitting Student</div>
+		<table class='runtime-table table-striped table'><tr><td>admissionNumber</td><td>firstName</td><td>rollNumber</td><td>lastName</td><td>studentClass</td><td>gender</td><td>section</td><td>dateOfBirth</td><td>category</td><td>email</td><td>admissionDate</td><td>bloodGroup</td><td>asOnDate</td><td>mobileNumber</td><td>height</td><td>weight</td><td>fatherName</td><td>fatherPhone</td><td>fatherOccupation</td><td>motherName</td><td>motherPhone</td><td>motherOccupation</td><td>guardianName</td><td>guardianRelation</td><td>guardianEmail</td><td>guardianPhone</td><td>guardianOccupation</td><td>guardianAdress</td></tr><tr><td>548</td><td>Phil</td><td>123456</td><td>Gonzales</td><td>SDET</td><td>Male</td><td>API Testing</td><td>02/07/1997</td><td>Testing sample</td><td>yeeyee@yahoomail.com</td><td>08/02/2022</td><td>O+</td><td>08/09/2022</td><td>7738547913</td><td>5'8</td><td>125lbs</td><td>Luis</td><td>9081235876</td><td>Window Cleaner</td><td>Josefina</td><td>4568527984</td><td>House Wife</td><td>Jose</td><td>Brother</td><td>wahoo@gmail.com</td><td>9075421764</td><td>Power Washer</td><td>458 Rodensdale ln</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Admitting Student</div>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Admitting Student</div>
 			<ul class='gc steps'>
 				<li test-id='5' class='gc given pass' status='pass'>
 					<h6 class="step-name" title="StudentAdmissionStepDef.user_is_on_chroma_tech_website()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user is on chroma tech website</h6>
@@ -220,47 +217,17 @@
 					<h6 class="step-name" title="StudentAdmissionStepDef.user_clicks_on_Student_Admission()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user clicks on Student Admission</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='9' class='gc and fail' status='fail'>
-					<h6 class="step-name" title="StudentAdmissionStepDef.admits_student_with_the_information(String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String)"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>And admits student with the information "548","Phil","123456","Gonzales","SDET","Male","API Testing","02/07/1997","Testing sample","yeeyee@yahoomail.com","08/02/2022","O+","08/09/2022","7738547913","120in","125lbs"</h6>
-					<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@id='custom_fields because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@id='custom_fields' is not a valid XPath expression.
-  (Session info: chrome=104.0.5112.81)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'BOOK', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a8eeaaa8e8774e72f466277259118ba, findElement {using=xpath, value=//input[@id='custom_fields}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\white\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51478}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51478/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6a8eeaaa8e8774e72f466277259118ba
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
-	at com.stepDefinitions.StudentAdmissionStepDef.admits_student_with_the_information(StudentAdmissionStepDef.java:73)
-	at ✽.admits student with the information "548","Phil","123456","Gonzales","SDET","Male","API Testing","02/07/1997","Testing sample","yeeyee@yahoomail.com","08/02/2022","O+","08/09/2022","7738547913","120in","125lbs"(file:src/test/java/com/features/StudentAdmission.feature:11)
-</textarea>
+				<li test-id='9' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.admits_student_with_the_information(String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And admits student with the information "548","Phil","123456","Gonzales","SDET","Male","API Testing","02/07/1997","Testing sample","yeeyee@yahoomail.com","08/02/2022","O+","08/09/2022","7738547913","5'8","125lbs"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='10' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="StudentAdmissionStepDef.selects_other_for_guardian()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And selects other for guardian</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='10' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_other_for_guardian()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And selects other for guardian</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='11' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="StudentAdmissionStepDef.enters_guardian_information(String,String,String,String,String,String,String,String,String,String,String,String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And enters guardian information "Luis","9081235876","fatherOccupation","Josefina","4568527984","House Wife","Jose","Brother","wahoo@gmail.com","9075421764","Power Washer","458 Rodensdale ln"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='11' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_guardian_information(String,String,String,String,String,String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters guardian information "Luis","9081235876","Window Cleaner","Josefina","4568527984","House Wife","Jose","Brother","wahoo@gmail.com","9075421764","Power Washer","458 Rodensdale ln"</h6>
+					<div class="node-step"></div>
 				</li>
 			</ul>
 		</li>
@@ -310,13 +277,13 @@ Session ID: 6a8eeaaa8e8774e72f466277259118ba
 					<div class='category-heading'>
 						<span class='category-name'>@Progression</span>
 						<span class='category-status right'>
-						<span class='label fail'>2</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -330,14 +297,14 @@ Session ID: 6a8eeaaa8e8774e72f466277259118ba
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 13, 2022 08:43:11 PM</td>
+										<td>Aug 14, 2022 03:30:37 PM</td>
 										<td class='linked' test-id='2'>Admitting Student</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 13, 2022 08:43:11 PM</td>
+										<td>Aug 14, 2022 03:30:37 PM</td>
 										<td class='linked' test-id='3'>Admitting Student</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -353,92 +320,7 @@ Session ID: 6a8eeaaa8e8774e72f466277259118ba
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.InvalidSelectorException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 13, 2022 08:43:15 PM</td>
-										<td class='linked' test-id='9'>And admits student with the information "548","Phil","123456","Gonzales","SDET","Male","API Testing","02/07/1997","Testing sample","yeeyee@yahoomail.com","08/02/2022","O+","08/09/2022","7738547913","120in","125lbs"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@id='custom_fields because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@id='custom_fields' is not a valid XPath expression.
-  (Session info: chrome=104.0.5112.81)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'BOOK', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a8eeaaa8e8774e72f466277259118ba, findElement {using=xpath, value=//input[@id='custom_fields}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\white\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51478}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51478/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6a8eeaaa8e8774e72f466277259118ba
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
-	at com.stepDefinitions.StudentAdmissionStepDef.admits_student_with_the_information(StudentAdmissionStepDef.java:73)
-	at ✽.admits student with the information "548","Phil","123456","Gonzales","SDET","Male","API Testing","02/07/1997","Testing sample","yeeyee@yahoomail.com","08/02/2022","O+","08/09/2022","7738547913","120in","125lbs"(file:src/test/java/com/features/StudentAdmission.feature:11)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -464,19 +346,19 @@ Session ID: 6a8eeaaa8e8774e72f466277259118ba
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 13, 2022 08:43:09 PM</div>
+					<div class='panel-lead'>Aug 14, 2022 03:30:35 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 13, 2022 08:43:26 PM</div>
+			 		<div class='panel-lead'>Aug 14, 2022 03:30:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 17s+607ms</div>
+					<div class='panel-lead'>0h 0m 17s+913ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -493,11 +375,11 @@ Session ID: 6a8eeaaa8e8774e72f466277259118ba
 						</tr>
 						<tr>
 							<td>@Progression</td>
-							<td>0</td>
 							<td>2</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -512,38 +394,38 @@ Session ID: 6a8eeaaa8e8774e72f466277259118ba
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				grandChildCount: 7,
-				passGrandChild: 4,
-				failGrandChild: 1,
+				passGrandChild: 7,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 2,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 3,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Feature Student Admission":14.395
+			        "Feature Student Admission":14.804
 			};
 		</script>
 	
