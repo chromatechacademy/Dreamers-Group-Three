@@ -17,6 +17,8 @@ public class HomePage {
     @FindBy (xpath = "//a[normalize-space()='Class']")
     public WebElement classModuleLink;
 
+    
+
 
 
 
