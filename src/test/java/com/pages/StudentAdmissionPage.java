@@ -41,14 +41,20 @@ public class StudentAdmissionPage {
     @FindBy(xpath = "//input[@id='email']")
     public WebElement emailTextBox;
 
-    @FindBy(xpath = "//script[contains(text(),'function savedata(eventData) {')]")
+    @FindBy(xpath = "//input[@id='admission_date']")
     public WebElement admissionDateTextBox;
+
+    @FindBy(xpath = "//td[@class='day'][normalize-space()='1']")
+    public WebElement admissionDateSelectTextBox;
 
     @FindBy(xpath = "//select[@name='blood_group']")
     public WebElement bloodGroupTextBox;
 
     @FindBy(xpath = "//input[@id='measure_date']")
     public WebElement asOnDateTextBox;
+
+    @FindBy(xpath = "//td[@class='day'][normalize-space()='9']")
+    public WebElement asOnDateSelectTextBox;
 
     @FindBy(xpath = "//input[@id='custom_fields")
     public WebElement mobileNumberTextBox;

@@ -1,10 +1,10 @@
 package com.pages;
 
+import com.web.WebDriverUtils;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.web.WebDriverUtils;
 
 public class HomePage {
 

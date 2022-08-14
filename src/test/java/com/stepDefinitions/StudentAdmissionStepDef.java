@@ -65,10 +65,13 @@ public class StudentAdmissionStepDef {
         CommonUtils.selectDropDownValue(category, studentAdmissionPage.categoryDropDown);
         studentAdmissionPage.emailTextBox.sendKeys(email);
         studentAdmissionPage.admissionDateTextBox.click();
-        Thread.sleep(6000);
+        studentAdmissionPage.admissionDateSelectTextBox.click();
         CommonUtils.selectDropDownValue(bloodGroup, studentAdmissionPage.bloodGroupTextBox);
-        studentAdmissionPage.asOnDateTextBox.sendKeys(asOnDate);
+        studentAdmissionPage.asOnDateTextBox.click();
+        studentAdmissionPage.asOnDateSelectTextBox.click();
+        Thread.sleep(6000);
         studentAdmissionPage.mobileNumberTextBox.sendKeys(mobileNumber);
+        Thread.sleep(6000);
         studentAdmissionPage.heightTextBox.sendKeys(height);
         studentAdmissionPage.weightTextBox.sendKeys(weight);
         

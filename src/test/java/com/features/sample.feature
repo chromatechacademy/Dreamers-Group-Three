@@ -8,9 +8,9 @@ Feature: Sample
     @SampleRun
     Scenario: Sample scenario
         Given this step can be used to specify a pre-condition
-        # When an action is made
-        # Then this is where you write the expected result
-        # And you can use this wherever needed to make your scenario make sense
+    # When an action is made
+    # Then this is where you write the expected result
+    # And you can use this wherever needed to make your scenario make sense
 
     #USE SCENARIOS/SCENARIO OUTLINES TO HARDCODE
     Scenario: Example of hardcoding in scenario
@@ -20,11 +20,13 @@ Feature: Sample
 
     #PERFORM DATA DRIVEN TESTING USING A SCENARIO OUTLINE
     #EXECUTE THE SAME TEST CASE WITH DIFFERENT SETS OF DATA
+    
     Scenario Outline: Sample of scenario outline - login with different usernames and passwords
         Given user is on the home page
         When users logs in with username "<username>" and password "<password>"
         Then page displays with title "sample title"
-
+        
+        Examples:
             | username             | password |
             | general@teacher.com  | 123456   |
             | general1@teacher.com | 123456   |
