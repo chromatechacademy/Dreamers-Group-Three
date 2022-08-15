@@ -71,7 +71,29 @@ public class ModulesStepDef {
     public void add_HomeWork_module_displays() {
         String addHomeWorkModule = "Add Homework";
         Assert.assertEquals(homePage.addHomeWorkModule.getText(), addHomeWorkModule);
-
+    
     }
 
+    @When("User clicks on the Expenses module")
+    public void user_clicks_on_the_Expenses_module() {
+        homePage.expensesModule.click();
+    
+    }
+    
+    @Then("the Expenses modules are display")
+    public void the_Expenses_modules_are_display() throws InterruptedException 
+    {
+
+        String addExpenseModuleExpected = "Add Expense";
+        String searchExpenseModuleExpected = "Search Expense";
+        String expenseHeadModuleExpected = "Expense Head";
+        Thread.sleep(2000);
+
+        Assert.assertEquals(homePage.addExpenseModule.getText(),addExpenseModuleExpected);
+        Assert.assertEquals(homePage.searchExpenseModule.getText(),searchExpenseModuleExpected);
+        Assert.assertEquals(homePage.expenseHeadModule.getText(),expenseHeadModuleExpected);
+
+
+    }
 }
+

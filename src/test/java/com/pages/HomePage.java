@@ -35,6 +35,16 @@ public class HomePage {
     @FindBy(xpath = "//*[contains(text(),'Add Homework')]")
     public WebElement addHomeWorkModule;
 
+    @FindBy(xpath = "(//*[contains(text(),'Add Expense')])[2]")
+    public WebElement addExpenseModule;
+
+    @FindBy(xpath = "//a[normalize-space()='Search Expense']")
+    public WebElement searchExpenseModule;
+
+    @FindBy(xpath = "//*[contains(text(),'Expense Head')]")
+    public WebElement expenseHeadModule;
+    
+
     public HomePage() {
         PageFactory.initElements(WebDriverUtils.driver, this);
 
