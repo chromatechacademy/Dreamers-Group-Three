@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
         "pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
          features = "src/test/java/com/features", 
          glue = "com.stepDefinitions", 
-         tags = "@Progression", 
+         tags = "@Progession", 
          dryRun = false, 
          monochrome = true, 
          strict = true)
@@ -19,3 +19,4 @@ import cucumber.api.junit.Cucumber;
 public class RunProgressionTest {
 
 }
+

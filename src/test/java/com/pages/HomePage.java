@@ -20,10 +20,17 @@ public class HomePage {
     @FindBy(xpath = "//span[normalize-space()='Student Information']")
     public WebElement studentInfoModule;
 
-    // student list
+    // student information list
     @FindBy(xpath = "//li[1]/ul[1]")
     public WebElement studentInfoList; 
 
+    // fees Collection Module link
+    @FindBy(xpath = "//span[normalize-space()='Fees Collection']")
+    public WebElement feesCollectionLink;
+
+    // fees collection list
+    @FindBy(xpath = "//ul[contains(@class,'treeview-menu menu-open')]")
+    public WebElement feesCollectionList;
 
 
     // CONSTRUCTOR USING PAGE FACTORY TO INITIALIZE ELEMENTS
