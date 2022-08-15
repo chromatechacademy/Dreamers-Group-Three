@@ -104,6 +104,9 @@ public class StudentAdmissionPage {
     @FindBy(xpath = "//button[@type='submit'][normalize-space()='Save']")
     public WebElement saveButton;
 
+    @FindBy(xpath = "//div[@class='alert alert-success']")
+    public WebElement successMessage;
+
     public StudentAdmissionPage() {
 
         PageFactory.initElements(WebDriverUtils.driver, this);
