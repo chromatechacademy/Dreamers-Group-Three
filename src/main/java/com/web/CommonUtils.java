@@ -1,6 +1,5 @@
 package com.web;
 
-import java.io.IOException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -8,9 +7,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
-import com.utils.ConfigReader;
 
 import org.junit.Assert;
 import org.openqa.selenium.Alert;

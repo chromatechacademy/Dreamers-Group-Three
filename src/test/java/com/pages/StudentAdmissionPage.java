@@ -1,8 +1,5 @@
 package com.pages;
 
-import javax.xml.xpath.XPath;
-
-import org.checkerframework.framework.qual.FieldInvariant;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

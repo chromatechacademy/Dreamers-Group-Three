@@ -6,7 +6,6 @@ import com.web.WebDriverUtils;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Base64;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
