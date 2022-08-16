@@ -53,7 +53,7 @@ public class WebDriverUtils {
 
         } else if (ConfigReader.getPropertyValue("browser").equalsIgnoreCase("mobile")) {
             DesiredCapabilities cap = new DesiredCapabilities();
-            if (ConfigReader.getPropertyValue("platformName").equalsIgnoreCase("iOS")) {
+            if (ConfigReader.getPropertyValue("platformName").equalsIgnoreCase("iOS")){
                 cap.setCapability("platformName", ConfigReader.getPropertyValue("platformName"));
                 cap.setCapability("deviceName", ConfigReader.getPropertyValue("deviceName"));
                 cap.setCapability("automationName", "XCUITest");
