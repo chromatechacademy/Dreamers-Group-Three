@@ -51,6 +51,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -95,7 +103,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
@@ -112,7 +120,8 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@SampleRun</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@Moe</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@DG3-20</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -129,23 +138,24 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
 												tags=""
 												devices="">
-												<span class="tt">08.08.2022 18:16:49</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Sample] started</span>
+												<span class="tt">08.16.2022 18:29:37</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[Ability to add and delete student categories] started</span>
 												
 											</div>
 											<div class="st pass test l1" 
-												tags="@SampleRun"
+												tags="@Moe @DG3-20"
 												devices="">
-												<span class="tt">08.08.2022 18:16:49</span>&nbsp;
+												<span class="tt">08.16.2022 18:29:37</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Sample scenario] started</span>
+												<span class="tn">|---[user should add and delete student from categories] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @SampleRun</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @Moe</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @DG3-20</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -156,16 +166,184 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">08.08.2022 18:16:49</span>&nbsp;
+												<span class="tt">08.16.2022 18:29:37</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given this step can be used to specify a pre-condition] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on the CTSMS login page] started</span>
 												
 												<div class="st info">
-													<span class="tt">08.08.2022 18:16:51</span>&nbsp;
+													<span class="tt">08.16.2022 18:29:39</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given this step can be used to specify a pre-condition]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on the CTSMS login page]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded1.png' src='test-output/embedded1.png'></span>
 													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:29:39</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with username "general@teacher.com" and password "123456"] started</span>
+												
+												<div class="st info">
+													<span class="tt">08.16.2022 18:29:41</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with username "general@teacher.com" and password "123456"]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded2.png' src='test-output/embedded2.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:29:45</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user clicks on section "Student Information"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">08.16.2022 18:29:47</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user clicks on section "Student Information"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:29:47</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user then clicks on "Student Categories"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">08.16.2022 18:29:51</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user then clicks on "Student Categories"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:29:51</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter "Moe" for Category] started</span>
+												
+												<div class="st pass">
+													<span class="tt">08.16.2022 18:29:53</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter "Moe" for Category]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:29:53</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user clicks on the "Save" button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">08.16.2022 18:29:56</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user clicks on the "Save" button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l1" 
+												tags="@DG3-20"
+												devices="">
+												<span class="tt">08.16.2022 18:29:58</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[user should be able to delete form the category] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @DG3-20</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:29:58</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on the CTSMS login page] started</span>
+												
+												<div class="st info">
+													<span class="tt">08.16.2022 18:30:00</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on the CTSMS login page]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded3.png' src='test-output/embedded3.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:30:00</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with username "general@teacher.com" and password "123456"] started</span>
+												
+												<div class="st info">
+													<span class="tt">08.16.2022 18:30:01</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with username "general@teacher.com" and password "123456"]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded4.png' src='test-output/embedded4.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:30:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user clicks on section "Student Information"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">08.16.2022 18:30:07</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user clicks on section "Student Information"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:30:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user then clicks on "Student Categories"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">08.16.2022 18:30:10</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user then clicks on "Student Categories"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">08.16.2022 18:30:10</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user should delete "Moe"] started</span>
+												
+												<div class="st fail">
+													<span class="tt">08.16.2022 18:30:10</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And user should delete "Moe"]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException
+	at com.stepDefinitions.AddAndDeleteStudentCategoriesStepDef.user_should_delete(AddAndDeleteStudentCategoriesStepDef.java:52)
+	at ✽.user should delete "Moe"(file:src/test/java/com/features/AddAndDeleteStudentCategories.feature:19)
+</textarea></span>
 												</div>
 											</div>
 											</div>
