@@ -92,4 +92,7 @@ public class WebDriverUtils {
         driver.quit();
     }
 
+    public void click() {
+    }
+
 }
