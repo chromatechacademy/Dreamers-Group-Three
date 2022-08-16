@@ -1,5 +1,7 @@
 package com.stepDefinitions;
 
+import java.io.IOException;
+
 import org.apache.commons.configuration.resolver.CatalogResolver.Catalog;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -11,6 +13,7 @@ import com.pages.BulkDeletePage;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.pages.StudentAdmissionPage;
+import com.utils.CucumberLogUtils;
 import com.web.CommonUtils;
 import com.web.JavascriptUtils;
 import com.web.WebDriverUtils;
@@ -88,7 +91,7 @@ public class StudentAdmissionStepDef {
             String motherName,
             String motherPhone, String motherOccupation, String guradianName, String guardianRelation,
             String guardianEmail, String guardianPhone,
-            String guardianOccupation, String guardianAdress) throws InterruptedException {
+            String guardianOccupation, String guardianAdress) throws InterruptedException, IOException {
 
         studentAdmissionPage.fatherNameTextBox.sendKeys(fatherName);
         studentAdmissionPage.fatherPhoneTextBox.sendKeys(fatherPhone);
@@ -104,21 +107,23 @@ public class StudentAdmissionStepDef {
         studentAdmissionPage.guardianAddressTextBox.sendKeys(guardianAdress);
         JavascriptUtils.scrollIntoView(studentAdmissionPage.saveButton);
         studentAdmissionPage.saveButton.click();
+        CucumberLogUtils.logScreenShot();
 
     }
 
     @Then("student is succefully admitted and user sees message {string}")
     public void student_is_succefully_admitted_and_user_sees_message(String successMessage)
-            throws InterruptedException {
+            throws InterruptedException, IOException {
         Thread.sleep(3000);
         CommonUtils.waitForVisibility(studentAdmissionPage.successMessage);
         Assert.assertTrue(studentAdmissionPage.successMessage.getText().contentEquals(successMessage));
+        CucumberLogUtils.logScreenShot();
     }
 
     @Then("user deletes student record with class {string} and section {string} and admission number {string}")
     public void user_deletes_student_record_with_class_and_section_and_admission_number(String className,
             String sectionName,
-            String admissionNumber) throws InterruptedException {
+            String admissionNumber) throws IOException, InterruptedException  {
 
         CommonUtils.waitForVisibility(bulkDeletePage.bulkDeleteLink);
         bulkDeletePage.bulkDeleteLink.click();
@@ -129,7 +134,7 @@ public class StudentAdmissionStepDef {
         bulkDeletePage.bulkDeleteDynamicXpath(admissionNumber).click();
         bulkDeletePage.deleteButton.click();
         CommonUtils.acceptAlert();
-        Thread.sleep(6000);
+        CucumberLogUtils.logScreenShot();
 
     }
 

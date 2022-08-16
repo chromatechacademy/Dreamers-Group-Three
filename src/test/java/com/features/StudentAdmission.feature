@@ -1,8 +1,8 @@
 Feature: Feature Student Admission
 
     Feature Description:
-
-    @Progression
+    
+    @DG3-12
     Scenario Outline: Admitting Student
         Given user is on chroma tech website
         When the teacher is logging in with username "general@teacher.com" and password "123456"

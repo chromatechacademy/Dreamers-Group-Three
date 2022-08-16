@@ -10,18 +10,23 @@ import com.web.WebDriverUtils;
 
 public class BulkDeletePage {
 
+    //Bulk Delete link
     @FindBy(xpath = "//a[normalize-space()='Bulk Delete']")
     public WebElement bulkDeleteLink;
 
+    //Class name drop down
     @FindBy(xpath = "//select[@autocomplete='off']")
     public WebElement classNameDropDown;
 
+    //Section name drop down
     @FindBy(xpath = "//select[@id='section_id']")
     public WebElement sectionNameDropDown;
 
+    //Search button
     @FindBy(xpath = "//button[normalize-space()='Search']")
     public WebElement searchButton;
 
+    //Delete button
     @FindBy(xpath = "//button[@id='load']")
     public WebElement deleteButton;
 
