@@ -2,7 +2,7 @@ Feature: Fees Collection Module
 
     Feature Description: clicking on Fees Collection modules displaying more modules
 
-    @pricila @DG3-5 @Progession
+    @pricila @DG3-5 @Smoke
     Scenario: Fees Collection module scenario
         Given user is logged in on the CTSMS login page
         When A user clicks on Fees Collection

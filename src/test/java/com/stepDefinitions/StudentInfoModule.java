@@ -20,8 +20,8 @@ public class StudentInfoModule {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
 
-    @Given("A user is logged into the ctsms website")
-    public void a_user_is_logged_into_the_ctsms_website() throws IOException {
+    @Given("A user is logged onto the ctsms website")
+    public void a_user_is_logged_onto_the_ctsms_website() throws IOException {
         WebDriverUtils.driver.get(ApplicationConstants.APPLICATION_URL);
         loginPage.usernameTextBox.sendKeys(ApplicationConstants.USERNAME);
         loginPage.passwordTextBox.sendKeys(ApplicationConstants.PASSWORD);
