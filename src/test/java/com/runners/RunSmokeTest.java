@@ -17,12 +17,11 @@ import cucumber.api.junit.Cucumber;
 		"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"  }, 
 		features = "src/test/java/com/features", 
 		glue = "com.stepDefinitions", 
-		tags = "@Smoke", 
+		tags = "@DG3-20", 
 		dryRun = false, 
 		monochrome = true, 
 		strict = true
 )
 
 public class RunSmokeTest {
-    
-}
+} 
