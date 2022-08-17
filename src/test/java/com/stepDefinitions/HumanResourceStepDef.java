@@ -1,10 +1,13 @@
 package com.stepDefinitions;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
 import com.pages.HumanResource;
 import com.pages.LoginPage;
+import com.utils.CucumberLogUtils;
 import com.web.CommonUtils;
 import com.web.WebDriverUtils;
 
@@ -18,15 +21,18 @@ public class HumanResourceStepDef {
     HumanResource humanResource = new HumanResource();
 
     @Given("the teacher is on the CTSMS login webpage")
-    public void the_teacher_is_on_the_CTSMS_login_webpage() {
+    public void the_teacher_is_on_the_CTSMS_login_webpage() throws IOException {
 
         WebDriverUtils.driver.get("https://chroma.mexil.it/site/login");
+
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
 
     }
 
     @When("the teacher logs in with username {string} and password {string} and by expanding the Human Resource tab")
     public void the_teacher_logs_in_with_username_and_password_and_by_expanding_the_Human_Resource_tab(String username,
-            String password) {
+            String password) throws IOException {
 
         loginPage.usernameTextBox.sendKeys(username);
         loginPage.passwordTextBox.sendKeys(password);
@@ -36,12 +42,15 @@ public class HumanResourceStepDef {
 
         WebDriverUtils.driver.findElement(By.xpath("//span[normalize-space()='Human Resource']")).click();
 
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
+
     }
 
     @Then("the teacher should see the modules described under Description {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
     public void the_teacher_should_see_the_modules_described_under_Description(String staffDirectory,
             String staffAttendance, String payroll, String approveLeaveRequest, String applyLeave, String leaveType,
-            String teacherRating, String department, String designation) {
+            String teacherRating, String department, String designation) throws IOException {
 
         String actualResult1 = humanResource.staffDirectoryTab.getText();
         Assert.assertTrue(actualResult1.contentEquals(staffDirectory));
@@ -85,6 +94,9 @@ public class HumanResourceStepDef {
 
         String actualResult9 = humanResource.designationTab.getText();
         Assert.assertTrue(actualResult9.contentEquals(designation));
+
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
 
     }
 

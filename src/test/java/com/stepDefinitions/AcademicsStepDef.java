@@ -1,10 +1,13 @@
 package com.stepDefinitions;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-import com.pages.Academics;
 import com.pages.LoginPage;
+import com.utils.CucumberLogUtils;
+import com.pages.Academics;
 import com.web.CommonUtils;
 import com.web.WebDriverUtils;
 
@@ -12,19 +15,27 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class DG3Academics {
+public class AcademicsStepDef {
 
     LoginPage loginPage = new LoginPage();
     Academics academics = new Academics();
+    
+    
 
     @Given("a teacher is on the CTSMS login webpage")
-    public void a_teacher_is_on_the_CTSMS_login_webpage() {
+    public void a_teacher_is_on_the_CTSMS_login_webpage() throws IOException {
         WebDriverUtils.driver.get("https://chroma.mexil.it/site/login");
+
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
     }
+
+   
+
 
     @When("the teacher logs in with username {string} and password {string} and by expanding the Academics tab")
     public void the_teacher_logs_in_with_username_and_password_and_by_expanding_the_Academics_tab(String username,
-            String password) {
+            String password) throws IOException {
         loginPage.usernameTextBox.sendKeys(username);
         loginPage.passwordTextBox.sendKeys(password);
         loginPage.signInButton.click();
@@ -32,12 +43,15 @@ public class DG3Academics {
         // Expanding the Accademics Page
 
         WebDriverUtils.driver.findElement(By.xpath("//span[normalize-space()='Academics']")).click();
+
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
     }
 
     @Then("the teacher should see the modules described in Description {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
     public void the_teacher_should_see_the_modules_described_in_Description(String classTimetable,
             String teachersTimetable, String assignClassTeacher, String promoteStudents, String subjectGroup,
-            String Subjects, String Class, String Sections) throws InterruptedException {
+            String Subjects, String Class, String Sections) throws InterruptedException, IOException {
 
         String actualResult1 = academics.classTimetableTab.getText();
         Assert.assertTrue(actualResult1.contentEquals(classTimetable));
@@ -76,6 +90,9 @@ public class DG3Academics {
 
         String actualResult8 = academics.SectionsTab.getText();
         Assert.assertTrue(actualResult8.contentEquals(Sections));
+
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
 
     }
 

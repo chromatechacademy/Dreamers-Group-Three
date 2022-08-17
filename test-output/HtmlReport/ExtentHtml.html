@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 11, 2022 04:47:25 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 17, 2022 02:18:07 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -80,8 +80,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Diego</a></li>
-					<li><a href='#'>@DG3-11</a></li>
+					<li><a href='#'>@DG3-9</a></li>
+					<li><a href='#'>@Serge</a></li>
 					<li><a href='#'>@Smoke</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -153,7 +153,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -178,8 +178,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verifying Classes and Sections</span>
-						<span class='test-time'>Aug 11, 2022 04:47:28 PM</span>
+						<span class='test-name'>Human Resource module testing</span>
+						<span class='test-time'>Aug 17, 2022 02:18:10 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -189,50 +189,36 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
+<div class='test-desc'>Description: Testing the Human Resource to include specific modules</div>
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label'>@Diego</span>
-		<span class='category label'>@DG3-11</span>
+		<span class='category label'>@DG3-9</span>
+		<span class='category label'>@Serge</span>
 		<span class='category label'>@Smoke</span>
 	</div>
-	<span class='duration right label'>0h 0m 23s+234ms</span>
+	<span class='duration right label'>0h 0m 8s+334ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: CTSMS - Class and Sections Verification</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with valid credentials and navigating to Human Resource module</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="ClassAndSectionsSteps.user_is_one_the_CTSMS_login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user is one the CTSMS login page</div>
+			<div class="step-name" title="HumanResourceStepDef.the_teacher_is_on_the_CTSMS_login_webpage()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the teacher is on the CTSMS login webpage</div>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/diegojuarez/git/Dreamers-Group-Three/test-output/screenshots/image_11082022_164730.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\Serge\Dropbox\CHROMATECH\Dreamers-Group-Three/test-output/screenshots/image_17082022_141813.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='5' class='node when pass' status='pass'>
-			<div class="step-name" title="ClassAndSectionsSteps.user_logs_with_username_and_password(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user logs with username "general@teacher.com" and password "123456"</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='6' class='node and pass' status='pass'>
-			<div class="step-name" title="ClassAndSectionsSteps.navigates_to_Academics_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Academics module</div>
+			<div class="step-name" title="HumanResourceStepDef.the_teacher_logs_in_with_username_and_password_and_by_expanding_the_Human_Resource_tab(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When the teacher logs in with username "general@teacher.com" and password "123456" and by expanding the Human Resource tab</div>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/diegojuarez/git/Dreamers-Group-Three/test-output/screenshots/image_11082022_164747.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\Serge\Dropbox\CHROMATECH\Dreamers-Group-Three/test-output/screenshots/image_17082022_141818.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='7' class='node and pass' status='pass'>
-			<div class="step-name" title="ClassAndSectionsSteps.navigates_to_Class_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Class module</div>
+		<li test-id='6' class='node then pass' status='pass'>
+			<div class="step-name" title="HumanResourceStepDef.the_teacher_should_see_the_modules_described_under_Description(String,String,String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the teacher should see the modules described under Description "Staff Directory", "Staff Attendance", "Payroll", "Approve Leave Request", "Apply Leave", "Leave Type", "Teachers Rating", "Department", "Designation"</div>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/diegojuarez/git/Dreamers-Group-Three/test-output/screenshots/image_11082022_164750.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='8' class='node then pass' status='pass'>
-			<div class="step-name" title="ClassAndSectionsSteps.class_displays_with_class_sections(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Class "Cyber Security" displays with class sections</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='9' class='node then pass' status='pass'>
-			<div class="step-name" title="ClassAndSectionsSteps.class_displays_with_the_following_class_sections(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Class "SDET" displays with the following class sections</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/diegojuarez/git/Dreamers-Group-Three/test-output/screenshots/image_11082022_164752.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\Serge\Dropbox\CHROMATECH\Dreamers-Group-Three/test-output/screenshots/image_17082022_141819.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 			<div class="node-step"></div>
 		</li>
@@ -280,7 +266,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Diego</span>
+						<span class='category-name'>@DG3-9</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -302,8 +288,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 11, 2022 04:47:28 PM</td>
-										<td class='linked' test-id='2'>CTSMS - Class and Sections Verification</td>
+										<td>Aug 17, 2022 02:18:10 PM</td>
+										<td class='linked' test-id='2'>Login with valid credentials and navigating to Human Resource module</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -313,7 +299,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@DG3-11</span>
+						<span class='category-name'>@Serge</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -335,8 +321,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 11, 2022 04:47:28 PM</td>
-										<td class='linked' test-id='2'>CTSMS - Class and Sections Verification</td>
+										<td>Aug 17, 2022 02:18:10 PM</td>
+										<td class='linked' test-id='2'>Login with valid credentials and navigating to Human Resource module</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -368,8 +354,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 11, 2022 04:47:28 PM</td>
-										<td class='linked' test-id='2'>CTSMS - Class and Sections Verification</td>
+										<td>Aug 17, 2022 02:18:10 PM</td>
+										<td class='linked' test-id='2'>Login with valid credentials and navigating to Human Resource module</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -406,25 +392,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 11, 2022 04:47:25 PM</div>
+					<div class='panel-lead'>Aug 17, 2022 02:18:07 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 11, 2022 04:47:52 PM</div>
+			 		<div class='panel-lead'>Aug 17, 2022 02:18:20 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 27s+475ms</div>
+					<div class='panel-lead'>0h 0m 13s+938ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -440,7 +426,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Diego</td>
+							<td>@DG3-9</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -449,7 +435,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@DG3-11</td>
+							<td>@Serge</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -495,8 +481,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 6,
-				passGrandChild: 6,
+				grandChildCount: 3,
+				passGrandChild: 3,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -509,7 +495,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Verifying Classes and Sections":23.234
+			        "Human Resource module testing":8.334
 			};
 		</script>
 	
