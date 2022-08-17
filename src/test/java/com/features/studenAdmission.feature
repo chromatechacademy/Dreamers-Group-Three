@@ -1,10 +1,8 @@
 Feature: Student Admmission Number
 
 
-    @DG3-13
+    @Moe @DG3-13 @Smoke  
     Scenario: Student Admission Unique admission number
-
-
         Given user is on the CTSMS login page
         When user logs in with username "general@teacher.com" and password "123456"
         And navigates to Student Information menu option

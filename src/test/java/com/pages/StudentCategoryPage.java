@@ -14,8 +14,8 @@ public class StudentCategoryPage {
     @FindBy(xpath = "//*[@id='form1']/div[2]/button")
     public WebElement saveButton;
     
-    @FindBy(xpath = "//body[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[4]/td[3]/a[2]")
-    public WebDriverUtils deleteButton; 
+    @FindBy(xpath = "//td[contains(text(),'Moe')]/following-sibling::td[2]/a[2]")
+    public WebElement deleteButton; 
    
 
     

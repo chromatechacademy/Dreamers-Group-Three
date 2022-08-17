@@ -20,6 +20,14 @@ public class HomePage {
     @FindBy(xpath = "//a[normalize-space()='Bulk Delete']")
     public WebElement bulkDelete;
 
+    @FindBy(xpath = "//span[normalize-space()='Student Information']")
+    public WebElement studentInformaion;
+
+    @FindBy(xpath = "//a[normalize-space()='Student Categories']")
+    public WebElement studenCategories; 
+
+
+
     
 
 
