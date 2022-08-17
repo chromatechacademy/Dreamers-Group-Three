@@ -8,8 +8,15 @@ import com.web.WebDriverUtils;
 
 public class HomePage {
 
+
     @FindBy(xpath = "(//*[contains(text(),'Student Information')])[1]")
     public WebElement studentInformationModule;
+
+    @FindBy(xpath ="(//*[contains(text(),'Student Details')])[2]")
+    public WebElement studentDetailsModule;
+
+    @FindBy(xpath="//a[normalize-space()='Disabled Students']")
+    public WebElement disabledStudentModule;
 
     @FindBy(xpath = "//*[contains(text(),' Fees Collection')]")
     public WebElement feesCollectionModule;
