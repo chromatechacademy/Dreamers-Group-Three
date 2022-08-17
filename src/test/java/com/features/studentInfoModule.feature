@@ -2,7 +2,7 @@ Feature: Student Info Module
 
     Feature Description: clicking on Student Information modules displaying more modules
 
-    @pricila @DG3-4 @Smoke
+    @pricila @DG3-4 @Progession @Regression
     Scenario: Student information Module scenario
         Given A user is logged onto the ctsms website
         When A user clicks on Student Information
