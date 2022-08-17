@@ -15,7 +15,7 @@ Feature: Verifying Classes and Sections
             Penetration Testing/Ethical Hacking
             """
         Then Class "SDET" displays with the following class sections
-            """ 
+            """
             Testing Fundamentals
             SDLC Methodologies
             Selenium Test Automation
@@ -27,3 +27,12 @@ Feature: Verifying Classes and Sections
             Accessibility Testing
             Database Testing
             """
+
+    @Smoke
+    Scenario: CTSMS - Ability to add and delete sections
+        Given user is one the CTSMS login page
+        When user logs with username "general@teacher.com" and password "123456"
+        And navigates to Academics module
+        And navigates to sections module
+        And adds section "DYNAMIC XPATH EXAMPLE"
+        And deletes sections "DYNAMIC XPATH EXAMPLE"

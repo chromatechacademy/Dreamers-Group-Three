@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import com.constants.ApplicationConstants;
 import com.pages.AcademicsClassPage;
+import com.pages.AcademicsSectionPage;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.utils.CucumberLogUtils;
@@ -22,6 +23,7 @@ public class ClassAndSectionsSteps {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
     AcademicsClassPage academicsClassPage = new AcademicsClassPage();
+    AcademicsSectionPage academicsSectionPage = new AcademicsSectionPage();
 
     @Given("user is one the CTSMS login page")
     public void user_is_one_the_CTSMS_login_page() throws IOException {
@@ -84,7 +86,8 @@ public class ClassAndSectionsSteps {
     }
 
     @Then("Class {string} displays with the following class sections")
-    public void class_displays_with_the_following_class_sections(String sdetClassText, String sdetClassSectionsText) throws IOException {
+    public void class_displays_with_the_following_class_sections(String sdetClassText, String sdetClassSectionsText)
+            throws IOException {
 
         // ASSERTING SDET CLASS TEXT
         Assert.assertTrue(academicsClassPage.sdetClassText.getText().contentEquals(sdetClassText));
@@ -93,6 +96,41 @@ public class ClassAndSectionsSteps {
         CucumberLogUtils.logScreenShot();
         CucumberLogUtils.logExtentScreenshot();
 
+    }
+
+    @When("navigates to sections module")
+    public void navigates_to_sections_module() throws IOException {
+
+        CommonUtils.waitForVisibility(academicsSectionPage.sectionsLink);
+        academicsSectionPage.sectionsLink.click();
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
+
+    }
+
+    @When("adds section {string}")
+    public void adds_section(String sectionName) throws InterruptedException, IOException {
+
+        academicsSectionPage.sectionsTextBox.sendKeys(sectionName);
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
+        academicsSectionPage.sectionsSaveButton.click();
+        CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
+
+    }
+
+    @When("deletes sections {string}")
+    public void deletes_sections(String sectionName) throws InterruptedException, IOException {
+
+        Thread.sleep(2000);
+        CommonUtils.waitForVisibility(academicsSectionPage.classSectionsDynamicXPATH(sectionName));
+        academicsSectionPage.classSectionsDynamicXPATH(sectionName).click();
+        CommonUtils.acceptAlert();
+       CucumberLogUtils.logScreenShot();
+       CucumberLogUtils.logExtentScreenshot();
+        Thread.sleep(3000);
+      
     }
 
 }
