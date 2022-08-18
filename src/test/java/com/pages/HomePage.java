@@ -17,6 +17,11 @@ public class HomePage {
     @FindBy (xpath = "//a[normalize-space()='Class']")
     public WebElement classModuleLink;
 
+    @FindBy(xpath = "//a[normalize-space()='Bulk Delete']")
+    public WebElement bulkDelete;
+
+    
+
 
 
 
