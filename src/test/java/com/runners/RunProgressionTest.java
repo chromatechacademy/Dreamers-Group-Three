@@ -9,7 +9,13 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(plugin = { "html:target/html-reports/cucumber-default-report", "json:target/cucumber.json",
         "junit:target/cucumber.xml", "rerun:target/failed.txt",
         "pretty",
-        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, features = "src/test/java/com/features", glue = "com.stepDefinitions", tags = "@Progression", dryRun = false, monochrome = true, strict = true)
+        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
+        features = "src/test/java/com/features", 
+        glue = "com.stepDefinitions", 
+        tags = "@Progression", 
+        dryRun = true,
+        monochrome = true,
+        strict = true)
 
 public class RunProgressionTest {
 

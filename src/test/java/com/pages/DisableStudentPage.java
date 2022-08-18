@@ -8,6 +8,8 @@ import com.web.WebDriverUtils;
 
 public class DisableStudentPage {
 
+    
+
     /** Navigation to Student Information */
     @FindBy(xpath = "//span[normalize-space()='Student Information']")
     public WebElement studentInformationMenu;
