@@ -1,9 +1,9 @@
-Feature: Feature Student Admission
+Feature: Feature Student Record
 
     Feature Description:
     
-    @DG3-12 
-    Scenario Outline: Admitting Student
+     @Progression
+    Scenario Outline: Student Record
         Given user is on chroma tech website
         When the teacher is logging in with username "general@teacher.com" and password "123456"
         And user clicks Student Information
@@ -12,6 +12,7 @@ Feature: Feature Student Admission
         And selects other for guardian
         And enters guardian information "<fatherName>","<fatherPhone>","<fatherOccupation>","<motherName>","<motherPhone>","<motherOccupation>","<guardianName>","<guardianRelation>","<guardianEmail>","<guardianPhone>","<guardianOccupation>","<guardianAdress>"
         Then student is succefully admitted and user sees message "Record Saved Successfully"
+        And user will change student record by selecting class "<studentClass>" and section "<sectionClass>"
         And user deletes student record with class "<studentClass>" and section "<section>" and admission number "<admissionNumber>"
         Examples:
             | admissionNumber | firstName | rollNumber | lastName | studentClass | gender | section     | dateOfBirth | category       | email                | admissionDate | bloodGroup | asOnDate   | mobileNumber | height | weight | fatherName | fatherPhone | fatherOccupation | motherName | motherPhone | motherOccupation | guardianName | guardianRelation | guardianEmail   | guardianPhone | guardianOccupation | guardianAdress    |
