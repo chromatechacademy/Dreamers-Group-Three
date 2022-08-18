@@ -1,5 +1,6 @@
 package com.appsCommon;
 
+
 import com.pages.LoginPage;
 
 public class PageInitializer {
@@ -9,5 +10,6 @@ public class PageInitializer {
 
     public static void initializePageObjects(){
         loginPage = new LoginPage();
+      
     }
 }
