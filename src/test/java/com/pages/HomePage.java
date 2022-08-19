@@ -8,6 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
+    // Academics module link
+    @FindBy (xpath = "//span[normalize-space()='Academics']")
+    public WebElement academicsModuleLink;
+
     @FindBy(xpath = "//span[normalize-space()='Student Information']")
     public WebElement studentInformationLink;
 
