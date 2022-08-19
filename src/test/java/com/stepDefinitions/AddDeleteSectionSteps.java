@@ -63,7 +63,7 @@ public class AddDeleteSectionSteps {
     @When("the teacher deletes the Newly created section {string}")
     public void the_teacher_deletes_the_Newly_created_section(String NewSection) throws InterruptedException {
         
-        //academicsSectionPage.dynamicSectionXpath(NewSection).click();
+        academicsSectionPage.classSectionsDynamicXPATH(NewSection).click();
         Thread.sleep(2000);
         CommonUtils.acceptAlert();
 
