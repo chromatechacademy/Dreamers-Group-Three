@@ -3,10 +3,12 @@ package com.stepDefinitions;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.devtools.v85.applicationcache.ApplicationCache;
 import org.testng.Assert;
 
 import com.pages.LoginPage;
 import com.utils.CucumberLogUtils;
+import com.constants.ApplicationConstants;
 import com.pages.Academics;
 import com.web.CommonUtils;
 import com.web.WebDriverUtils;
@@ -23,11 +25,13 @@ public class AcademicsStepDef {
     
 
     @Given("a teacher is on the CTSMS login webpage")
-    public void a_teacher_is_on_the_CTSMS_login_webpage() throws IOException {
-        WebDriverUtils.driver.get("https://chroma.mexil.it/site/login");
+    public void a_teacher_is_on_the_CTSMS_login_webpage() throws IOException, InterruptedException {
+        WebDriverUtils.driver.get(ApplicationConstants.APPLICATION_URL);
 
         CucumberLogUtils.logScreenShot();
         CucumberLogUtils.logExtentScreenshot();
+
+        Thread.sleep(2000);
     }
 
    
@@ -35,14 +39,20 @@ public class AcademicsStepDef {
 
     @When("the teacher logs in with username {string} and password {string} and by expanding the Academics tab")
     public void the_teacher_logs_in_with_username_and_password_and_by_expanding_the_Academics_tab(String username,
-            String password) throws IOException {
+            String password) throws IOException, InterruptedException  {
         loginPage.usernameTextBox.sendKeys(username);
         loginPage.passwordTextBox.sendKeys(password);
         loginPage.signInButton.click();
 
-        // Expanding the Accademics Page
+        CommonUtils.waitForVisibility(academics.expandingHamburgerMenu);
 
-        WebDriverUtils.driver.findElement(By.xpath("//span[normalize-space()='Academics']")).click();
+        // Expanding the Hamburger Menu
+        academics.expandingHamburgerMenu.click();
+
+        CommonUtils.waitForVisibility(academics.expandingAcademics);
+        
+        // Expanding the Accademics Page
+        academics.expandingAcademics.click();
 
         CucumberLogUtils.logScreenShot();
         CucumberLogUtils.logExtentScreenshot();

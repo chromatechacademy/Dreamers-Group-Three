@@ -1,25 +1,26 @@
 package com.stepDefinitions;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
+import java.io.IOException;
 
-import com.pages.DisableStudentPage;
-import com.pages.HumanResource;
+import org.junit.Assert;
+
+import com.constants.ApplicationConstants;
 import com.pages.LoginPage;
-import com.web.CommonUtils;
+import com.utils.CucumberLogUtils;
 import com.web.WebDriverUtils;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class DisableStudentStepDef {
+public class MobileResponsiveness {
 
     LoginPage loginPage = new LoginPage();
-   
 
-   
+    
 
+    
 
+    
 }
 

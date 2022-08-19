@@ -8,6 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Academics {
 
+    /** Expanding Menu */
+    @FindBy(xpath = "//a[@role='button']")
+    public WebElement expandingHamburgerMenu;
+
+    /** Expanding the Academics Page */
+    @FindBy(xpath = "//span[normalize-space()='Academics']")
+    public WebElement expandingAcademics;
+
     /** classTimetableTab */
     @FindBy(xpath = "//a[@href='https://chroma.mexil.it/admin/timetable/classreport']")
     public WebElement classTimetableTab;
@@ -45,4 +53,3 @@ public class Academics {
     }
 
 }
-
