@@ -8,27 +8,24 @@ import com.web.WebDriverUtils;
 
 public class DisabledStudentsPage {
 
+    // Locator for Class Dropdown
     @FindBy(xpath = "//select[@id='class_id']")
     public WebElement classDropdown;
 
+    // Locator for Class Section Dropdown
     @FindBy(xpath = "//select[@id='section_id']")
     public WebElement classSectionDropDown;
-    
-    @FindBy(xpath ="//button[@value='search_filter']")
-    public WebElement searchBtn;
-    
 
+    // Locator for Search button
+    @FindBy(xpath = "//button[@value='search_filter']")
+    public WebElement searchBtn;
+
+    // Locator for Student Name
     @FindBy(xpath = "//tr[@role='row']//a[contains(text(),'Eugene Yeroshenko')]")
     public WebElement studentName;
 
-
-
-
-    public DisabledStudentsPage(){
-        PageFactory.initElements(WebDriverUtils.driver , this);
-        
-
-
+    public DisabledStudentsPage() {
+        PageFactory.initElements(WebDriverUtils.driver, this);
 
     }
 

@@ -56,4 +56,18 @@ public class EnabledStudentStepDef {
 
     }
 
+    @When("User selects Class {string}")
+    public void user_selects_Class(String string) {
+        CommonUtils.selectDropDownValue(string, disabledStudentsPage.classDropdown);
+    }
+
+    @When("User selects Section {string}")
+    public void user_selects_Section(String string) {
+        CommonUtils.selectDropDownValue(string, disabledStudentsPage.classSectionDropDown);
+
+    }
+
+
+ 
 }
+

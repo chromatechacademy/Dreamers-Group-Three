@@ -8,12 +8,15 @@ import com.web.WebDriverUtils;
 
 public class StudentProfilePage {
 
+    // **Locator for Enable Icon*/
     @FindBy(xpath = "//i[@class='fa fa-thumbs-o-up']")
     public WebElement enableIcon;
 
-    @FindBy(xpath ="//i[@class='fa fa-thumbs-o-down']")
+    // **Locator for Disable icon*/
+    @FindBy(xpath = "//i[@class='fa fa-thumbs-o-down']")
     public WebElement disableIcon;
 
+    // **Locator for Student Details Module*/
     @FindBy(xpath = "(//a[@href='https://chroma.mexil.it/student/search'])[2]")
     public WebElement studentDetailsModule;
 
