@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/java/com/features", 
 		glue = "com.stepDefinitions", 
 		tags = "@Progression", 
-		dryRun = true, 
+		dryRun = false, 
 		monochrome = true, 
 		strict = true
 )
