@@ -2,7 +2,7 @@ Feature: Feature Student Record
 
     Feature Description:
 
-    @Progression
+    @DG3-14 @Smoke
     Scenario Outline: Student Record
         Given user is on chroma tech website
         When the teacher is logging in with username "general@teacher.com" and password "123456"
