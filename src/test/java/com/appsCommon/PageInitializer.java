@@ -10,6 +10,5 @@ public class PageInitializer {
 
     public static void initializePageObjects(){
         loginPage = new LoginPage();
-      
     }
 }
