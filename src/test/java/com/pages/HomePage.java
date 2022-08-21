@@ -1,9 +1,15 @@
 package com.pages;
 
+<<<<<<< HEAD
+=======
+import com.web.WebDriverUtils;
+
+>>>>>>> 81e5e2ffbd253c904147c7a83ea7494b49039861
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+<<<<<<< HEAD
 import com.web.WebDriverUtils;
 
 public class HomePage {
@@ -69,4 +75,27 @@ public class HomePage {
 
     }
 
+=======
+public class HomePage {
+
+    // Academics module link
+    @FindBy (xpath = "//span[normalize-space()='Academics']")
+    public WebElement academicsModuleLink;
+
+    @FindBy(xpath = "//span[normalize-space()='Student Information']")
+    public WebElement studentInformationLink;
+
+    // Class module link
+    @FindBy(xpath = "//a[normalize-space()='Class']")
+    public WebElement classModuleLink;
+
+    @FindBy(xpath = "//a[normalize-space()='Bulk Delete']")
+    public WebElement bulkDelete;
+
+    // CONSTRUCTOR USING PAGE FACTORY TO INITIALIZE ELEMENTS
+    public HomePage() {
+
+        PageFactory.initElements(WebDriverUtils.driver, this);
+    }
+>>>>>>> 81e5e2ffbd253c904147c7a83ea7494b49039861
 }
